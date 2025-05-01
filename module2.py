@@ -31,12 +31,12 @@ def get_records(skip :int = 0, limit :int = 2):
 
 # Optional Paramater, the below will run on python 3.10+
 
-@app.get("/items/{item_id}")
-def read_item(item_id: str, q: str | None = None):      # typehint -> str | None telling that it can either be str or None, This is a Python 3.10+ syntax for Union types using the | operator. It means that q can be either: a string or None
+# @app.get("/items/{item_id}")
+# def read_item(item_id: str, q: str | None = None):      # typehint -> str | None telling that it can either be str or None, This is a Python 3.10+ syntax for Union types using the | operator. It means that q can be either: a string or None
 
-    if q:
-        return {"item_id": item_id, "q": q}
-    return {"item_id": item_id}
+#     if q:
+#         return {"item_id": item_id, "q": q}
+#     return {"item_id": item_id}
 
 
 # Optional Paramater, the below will run on python < 3.10

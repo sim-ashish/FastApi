@@ -110,3 +110,12 @@ contains upto,
 - Query Parameters Data Conversion
 - Optional Query Parameters
 - Getting all query parameters in a dictionary using the Request Object
+- We can also user Optional instead of Union
+```bash
+from typing import Optional
+
+@app.get('/')
+def index(sort: Optional[str] = None):
+    pass
+    
+```
